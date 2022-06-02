@@ -4,11 +4,6 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
 
-
-
-
-
-
 export default function Cadastro(){
     const [name, setName] = useState('');
     const [cpf, setCpf] = useState('');
@@ -100,35 +95,3 @@ const ButtonCadastro = styled.button`
 
 
 
-
-const Inputs = styled.div`
-display: flex;
-justify-content: center;
-align-content: center;
-flex-direction: column;
-`
-
-const InputCadastroEmail = styled.input`
-width: 303px;
-height: 45px;
-
-`
-const InputCadastroSenha = styled.input`
-width: 303px;
-height: 45px;
-`
-const InputCadastroNome = styled.input`
-width: 303px;
-height: 45px;
-`
-const InputCadastroFoto = styled.input`
-width: 303px;
-height: 45px;
-`
-const Button = styled.button`
-width: 303px;
-height: 45px;
-background: #52B6FF
-
-
-`

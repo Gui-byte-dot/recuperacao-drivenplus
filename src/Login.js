@@ -9,6 +9,7 @@ export default function Login(){
     const [password, setPassword] = useState('');
     const navigate = useNavigate('');
 
+
     function logar(){
         const body = {
             email,
@@ -17,7 +18,9 @@ export default function Login(){
         const promise = axios.post('https://mock-api.driven.com.br/api/v4/driven-plus/auth/login', body)
         promise.then(res => {
             console.log(res.data);
-            navigate("/sign-up");
+            console.log(res.data.name);
+            localStorage.setItem("ola",res.data.token);
+            navigate("/subscriptions");
             
         })
         .catch(err => {
