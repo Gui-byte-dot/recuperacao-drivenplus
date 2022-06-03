@@ -33,3 +33,26 @@
 .criacao{
     margin-top: 50px;
 }
+.list{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.li{
+    display:flex;
+    flex-direction: row;
+    margin-top:40px;
+}
+.list p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

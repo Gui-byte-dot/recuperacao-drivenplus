@@ -1,41 +1,26 @@
-import { useState } from "react";
 import axios from "axios";
+import { useState } from "react";
 import styled from "styled-components";
-
-
+import { Link } from "react-router-dom";
 
 export default function Listados(){
 
-    const [id, setId] = useState('');
-    const [name, setName] = useState('');
-    const [image, setImage] = useState('')
-    const [price, setPrice] = useState('');
-    const [perks, setPerks] = useState([]);
-
     const ok = localStorage.getItem("ola");
+    const [lista, setLista] = useState([]);
     
     function pegarlista(){
-        const body = {
-            id,
-            name,
-            image,
-            price,
-            perks,
-        }
+       
         const config = {
             headers: {
                 Authorization: `Bearer ${ok}`
             }
         }
    
-        const promise = axios.get('https://mock-api.driven.com.br/api/v4/driven-plus/subscriptions/memberships', body, config);
+        const promise = axios.get('https://mock-api.driven.com.br/api/v4/driven-plus/subscriptions/memberships', config);
         promise.then((objeto) => {
-            setId(objeto.data.id)
-            setName(objeto.data.name);
-            setImage(objeto.data.image);
-            setPrice(objeto.data.price);
-            setPerks(objeto.data.perks);
+            setLista(objeto.data);           
             console.log(objeto.data);
+            console.log(objeto.data[0].image);
 
         })
         .catch(err => {
@@ -46,16 +31,21 @@ export default function Listados(){
     }
     
     return (
-        <List>
+        <ul className="list">
             <Button onClick={pegarlista}>OK</Button>
-        </List>
+            {lista.map((r) => (
+                <li className="listas" key={r.id}>
+                  <Link to={`/subscriptions/${r.id}`}>
+                    <img src={r.image} alt="driven"/>  
+                    <p>{r.price}</p>
+                  </Link>
+                </li>
+            ))}
+        </ul>
     )
 }
 
-const List = styled.div`
-    display: flex;
-    flex-direction: column;
-`
+
 const Button = styled.button`
     display: flex;
     height: 50px;
