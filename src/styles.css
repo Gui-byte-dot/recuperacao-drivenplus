@@ -1,3 +1,18 @@
+body {
+    background-color: #0E0E13;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .selected{
     background: #465732;
 }
@@ -39,6 +54,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-top: 60px;
 
 }
 .li{
@@ -55,4 +71,160 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+.listas img{
+    width:91.89px;
+    height:95px;
+}
+.on{
+    display: none;
+}
+.off{
+    display: flex;
+}
+.listasopcoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.listasopcoes p{
+    background: #FF4791;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 299px;
+    height: 52px;
+    left: 38px;
+    top: 176px;
+    margin-top: 15px;
+
+}
+.listasopcoes img{
+    width:49.13px;
+    height:50.8px;
+}
+.listasopcoes h2{
+    color:#FFFFFF;
+    text-align: center;
+    font-weight: 700;
+
+}
+.listasopcoes p:nth-child(1){
+    margin-top: 53px;
+}
+.listasopcoes h2{
+    font-size: 24px;
+}
+.listasopcoes h3{
+    background: #FF4791;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 299px;
+    height: 52px;
+    left: 38px;
+    top: 176px;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.listasopcoes h4{
+    background: #FF4747;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 299px;
+    height: 52px;
+    left: 38px;
+    top: 176px;
+    margin-top: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.drivens{
+    color:#FFFFFF;
+    margin-top: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.drivens p{
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 32px
+}
+.drivens img{
+    width:140px;
+    height:95px;
+}
+.beneficios{
+    display: flex;
+    flex-direction: row;
+    margin-top: 22px;
+    margin-left: 36px;
+}
+.beneficios p{
+    color:#FFFFFF;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.bfs li{
+    color:#FFFFFF;
+    margin-top: 5px;
+    margin-left: 55px;
+    font-size: 14px;
+}
+.precos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 36px;
+    margin-top: 12px;
+
+}
+.precos h2{
+    color:#FFFFFF;
+    margin-left: 3px;
+    font-size: 16px;
+
+}
+.valores h2{
+    color:#FFFFFF;
+    font-size: 14px;
+}
+.valores{
+    margin-top:4px;
+    margin-left: 36px;
+}
+.driven1{
+    display: flex;
+    flex-direction: row;
+}
+.driven1{
+    color:#FFFFFF;
+    text-decoration: none;
+    border: 3px solid #7E7E7E;
+    border-radius: 12px;
+    margin-top: 24px;
+    font-weight: 700;
+}
+.driven1 img{
+    width:91.89px;
+    height:95px;
+}
+.listas h2{
+    color:#FFFFFF;
+    font-size: 32px;
+}
+.image{
+    margin-left: 36px;
+}
+.conta p{
+    color:#FFFFFF;
+    margin-left: 74PX;
+    margin-top: 24px;
+
+}
+

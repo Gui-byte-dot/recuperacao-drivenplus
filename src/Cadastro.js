@@ -31,12 +31,16 @@ export default function Cadastro(){
     }
     return (
         <Input>
-            <InputCadastroName type="text" placeholder="nome" value={name} onChange={(e) => setName(e.target.value)}/>
-            <InputCadastrodeEmail type="text" placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-            <InputCadastroCpf type="text" placeholder="cpf" value={cpf} onChange={(e) => setCpf(e.target.value)}/>
-            <InputCadastrodeSenha type="password" placeholder="senha" value={password} onChange={(e) => setPassword(e.target.value)}/>
+            <InputCadastroName type="text" placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)}/>
+            <InputCadastrodeEmail type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <InputCadastroCpf type="text" placeholder="Cpf" value={cpf} onChange={(e) => setCpf(e.target.value)}/>
+            <InputCadastrodeSenha type="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)}/>
             <ButtonCadastro onClick={cadastrar}>Cadastrar</ButtonCadastro>
-            <Link to="/">Já possui uma conta? Faça login</Link>
+            <div className="conta">
+            <Link to="/">
+                <p>Já possui uma conta? Faça login</p>
+            </Link>
+            </div>
         </Input>
 
     )
@@ -50,29 +54,65 @@ const Input = styled.div`
 `
 
 const InputCadastrodeEmail = styled.input`
-    width: 303px;
-    height: 45px;
+width: 299px;
+height: 52px;
+radius: 8px;
+display: flex;
+justify-content:center;
+margin-left: 36px;
+margin-top: 16px;
+background: #FFFFFF;
+border-radius: 8px;
 
 `
 const InputCadastrodeSenha = styled.input`
-    width: 303px;
-    height: 45px;
+    width: 299px;
+    height: 52px;
+    radius: 8px;
+    display: flex;
+    justify-content:center;
+    margin-left: 36px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
 `
 const InputCadastroName = styled.input`
-    width: 303px;
-    height: 45px;
+    width: 299px;
+    height: 52px;
+    radius: 8px;
+    display: flex;
+    justify-content:center;
+    margin-left: 36px;
+    margin-top: 100px;
+    background: #FFFFFF;
+    border-radius: 8px;
 `
 const InputCadastroCpf = styled.input`
-    width: 303px;
-    height: 45px;
+    width: 299px;
+    height: 52px;
+    radius: 8px;
+    display: flex;
+    justify-content:center;
+    margin-left: 36px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
 `
 
 
 
 const ButtonCadastro = styled.button`
-    width: 303px;
-    height: 45px;
-    background: #52B6FF
+width: 299px;
+height: 52px;
+background: #52B6FF;
+margin-top:24px;
+background: #FF4791;
+border-radius: 8px;
+color:#FFFFFF;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-left:36px;
 
 
 `
