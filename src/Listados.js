@@ -37,7 +37,7 @@ export default function Listados(){
                 return (
                 <div className="listas" key={r.id}>
                     <h2>Escolha seu Plano</h2>
-                  <Link to={`/subscriptions/1}`}>
+                  <Link to={`/subscriptions/1`}>
                     <div className="driven1">
                         <img src={r[0].image} alt="driven"/>  
                         <p>{r[0].price}</p>
